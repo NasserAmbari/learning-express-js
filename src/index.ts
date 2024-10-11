@@ -14,7 +14,7 @@ app.post("/register", (req: Request, res: Response) => {
 
 // Endpoint untuk login user
 app.post("/login", (req: Request, res: Response) => {
-	const { username, password } = req.body;
+	const { username, password, name } = req.body;
 	// Logika untuk login user
 	res.send("User logged in");
 });
